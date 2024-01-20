@@ -1,0 +1,16 @@
+package com.demo.dao;
+
+import java.util.List;
+
+import com.demo.model.MyUser;
+
+public interface Userdao {
+
+	
+
+	void save(MyUser u);
+
+	
+	List<MyUser> findAll();
+
+}

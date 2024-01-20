@@ -1,0 +1,11 @@
+package com.demo.dao;
+
+import com.demo.model.MyUser;
+
+public interface Userdao {
+
+	
+
+	void save(MyUser u);
+
+}

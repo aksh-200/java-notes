@@ -1,0 +1,7 @@
+package com.demo.model;
+
+@Entity
+Table
+public class Product {
+
+}

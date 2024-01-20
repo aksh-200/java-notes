@@ -1,0 +1,30 @@
+package com.demo.test;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.demo.model.Product;
+
+import java.util.List;
+
+public class TestRetrieveProduct {
+	public static void main(String[] args) {
+		SessionFactory sf = new Configuration().configure().buildSessionFactory();
+		Session s1=sf.openSession();
+		Transaction tr = s1.beginTransaction();
+		
+		Criteria cr=s1.createCriteria(Product.class);
+		List<Product> plist=cr.list();
+		
+		for(Product p : plist )
+		{
+			System.out.println(p);
+		}
+		
+		
+	}
+
+}

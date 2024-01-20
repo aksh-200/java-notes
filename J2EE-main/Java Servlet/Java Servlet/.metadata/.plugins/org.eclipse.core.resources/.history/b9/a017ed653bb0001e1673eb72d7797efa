@@ -1,0 +1,13 @@
+package com.demo.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="MyUser11")
+public class MyUser {
+	
+	@Id
+	private int uid
+
+}

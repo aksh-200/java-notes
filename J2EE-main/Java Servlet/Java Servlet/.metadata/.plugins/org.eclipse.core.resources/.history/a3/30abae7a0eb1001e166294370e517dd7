@@ -1,0 +1,20 @@
+package com.demo.test;
+
+import java.util.Scanner;
+
+import com.demo.service.UserServiceImpl;
+import com.demo.service.UserService;
+import com.demo.service.UserServiceImpl;
+
+public class TestCrudDemo {
+	public static void main(String[] args) {
+		int choice=0;
+		Scanner sc = new Scanner(System.in);
+		UserService uservice = new UserServiceImpl();
+		
+		
+		
+		
+	}
+
+}

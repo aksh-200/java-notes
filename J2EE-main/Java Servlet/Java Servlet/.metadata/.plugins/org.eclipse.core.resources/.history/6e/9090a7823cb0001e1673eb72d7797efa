@@ -1,0 +1,21 @@
+package com.demo.test;
+
+import com.demo.model.Address;
+import com.demo.model.MyUser;
+
+public class TestMyUserAddress {
+
+	
+	
+	public static void main(String[] args) {
+		Address add1= new Address(1,"Baner","Pune");
+		Address add2 = new Address(2,"deccan","pune");
+		
+		MyUser u1 = new MyUser(10,"Bhushan",add1);
+		
+		MyUser u1 = new MyUser(10,"Akshay",add2);
+		
+		
+		
+	}
+}

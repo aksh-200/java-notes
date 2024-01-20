@@ -1,0 +1,18 @@
+package com.demo.dao;
+
+import org.hibernate.SessionFactory;
+
+import com.demo.model.MyUser;
+
+public class UserDaoImpl implements Userdao {
+
+	public void save(MyUser u) {
+		
+		  static SessionFactory sf;
+		    static {
+		    	sf=HibernateUtil.getMySessionFactory();
+		    }
+		
+	}
+
+}
